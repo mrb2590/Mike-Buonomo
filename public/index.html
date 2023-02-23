@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mike Buonomo</title>
+    <meta name="author" content="Mike Buonomo">
+    <meta name="description" content="Hello, I'm Mike Buonomo">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2879fdc32e.js" crossorigin="anonymous"></script>
+    <style>
+      html, body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        background-color: #222;
+        color: #fff;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        opacity: 0;
+        transition: opacity 3s;
+      }
+      .center-box {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      h1 {
+        font-weight: bold;
+        margin-top: 0;
+        font-size: 5em;
+      }
+      a {
+        font-size: 1.2em;
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      a:hover {
+        color: #555;
+      }
+      ul {
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul > li {
+        margin: 0;
+        padding: 0;
+        display: inline;
+      }
+      ul > li:not(:last-child)::after {
+        content: '|';
+        margin: 0 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center-box">
+      <h1>Mike</h1>
+      <ul>
+        <li><a href="mailto:mike.buonomo.net"><i class="fa-solid fa-envelope" style="margin-right:10px"></i> mike@buonomo.net</a></li>
+        <li><i class="fa-solid fa-location-dot" style="margin-right:10px"></i> New Jersey</li>
+        <li><a href="https://buonomo.net"><i class="fa-solid fa-globe" style="margin-right:10px"></i> Buonomo</a></li>
+        <li><a href="https://github.com/mrb2590"><i class="fa-brands fa-github" style="margin-right:10px"></i> GitHub</a></li>
+      </ul>
+    </div>
+    <script>
+      window.addEventListener('load', (event) => {
+        document.getElementsByTagName('body')[0].style = 'opacity: 1;';
+      });
+    </script>
+  </body>
+</html>
